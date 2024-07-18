@@ -1,0 +1,12 @@
+.header {
+  background-color: #82a3ff;
+  padding: 10px 20px;
+  color: #fffbf2;
+  display: flex;
+}
+
+.header-logo {
+  height: 40px;
+  filter: invert(90%) sepia(19%) saturate(171%) hue-rotate(24deg)
+    brightness(109%) contrast(105%);
+}
