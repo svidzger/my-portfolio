@@ -1,7 +1,13 @@
+import '../styles/components/footer.css';
+
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className='footer'>
+      <p style={{ justifyItems: 'center', alignContent: 'center' }}>
+        Footer for additional info and links.
+      </p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

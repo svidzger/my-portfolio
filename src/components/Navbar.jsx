@@ -1,14 +1,24 @@
-// components/Navbar.jsx
+import { Link } from 'react-router-dom';
+import codingIcon from '../assets/coding-icon.svg';
 import '../styles/components/navbar.css';
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <nav className='navbar'>
+      <img src={codingIcon} alt='Coding Icon' className='logo' />
       <ul className='links'>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link to='/'>Home</Link>
+        </li>
+        <li>
+          <Link to='/projects'>Projects</Link>
+        </li>
+        <li>
+          <Link to='/about'>About</Link>
+        </li>
+        <li>
+          <Link to='/contact'>Contact</Link>
+        </li>
       </ul>
       <div className='social-media'>
         <a
@@ -26,7 +36,7 @@ const Navbar = () => {
           LinkedIn
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
