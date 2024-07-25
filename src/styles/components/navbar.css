@@ -1,5 +1,4 @@
 .logo {
-  height: 40px;
   filter: invert(90%) sepia(19%) saturate(171%) hue-rotate(24deg)
     brightness(109%) contrast(105%);
 }
@@ -35,7 +34,8 @@
 
 .social-media {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  margin-right: 5px;
 }
 
 .social-media a {
