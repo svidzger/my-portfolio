@@ -14,13 +14,10 @@ const Navbar = () => {
         <FaCode className='logo' />
         <ul className='links'>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to='/'>About me</Link>
           </li>
           <li>
             <Link to='/projects'>Projects</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
           </li>
           <li>
             <Link to='/contact'>Contact</Link>

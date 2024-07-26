@@ -1,8 +1,21 @@
+/* Ensure no padding or margin on the body and html */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .footer {
-  background-color: #82a3ff;
-  padding: 10px 20px;
-  color: #fffbf2;
+  background-color: #1f2a38;
+  color: #f5f5f5;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }

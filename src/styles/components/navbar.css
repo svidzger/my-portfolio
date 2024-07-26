@@ -1,48 +1,87 @@
-.logo {
-  filter: invert(90%) sepia(19%) saturate(171%) hue-rotate(24deg)
-    brightness(109%) contrast(105%);
+/* Ensure no padding or margin on the body and html */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Base styles for the navbar */
 .navbar {
-  background-color: #82a3ff;
+  background-color: #1f2a38;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
+/* Logo styling */
+.logo {
+  color: #f5f5f5;
+}
+
+/* Styling for navigation links */
 .links {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 100px;
+  gap: 50px;
 }
 
 .links li {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .links a {
-  color: #fffbf2;
+  color: #f5f5f5;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .links a:hover {
-  color: #ff9e9e;
+  color: #ff9e9e; /* Accent color on hover */
 }
 
+/* Social media icon container */
 .social-media {
   display: flex;
-  gap: 15px;
-  margin-right: 5px;
+  gap: 20px;
 }
 
 .social-media a {
-  color: #fffbf2;
+  color: #f5f5f5;
   text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 .social-media a:hover {
-  color: #ff9e9e;
+  color: #ff9e9e; /* Same hover effect for consistency */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-media {
+    margin-top: 10px;
+  }
 }
