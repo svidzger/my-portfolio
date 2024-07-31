@@ -1,0 +1,58 @@
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.page-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+}
+
+.about-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  font-size: 20px;
+  color: #1f2a38;
+}
+
+.about-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tech-section {
+  text-align: center;
+}
+
+.tech-content {
+  gap: 20px;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2a38;
+  text-align: left;
+}
